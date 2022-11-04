@@ -27,7 +27,7 @@ The Command subsystem allows the users to control the motion of the rover throug
 ## To run the code:
 ```bash 
 ##all code and dependencies
-launch.sh &lt;ip address>
+launch.sh <ip address>
 ##to run the web application <br>
 clear.sh
 ##To clear database 
