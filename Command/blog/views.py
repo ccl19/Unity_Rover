@@ -267,19 +267,19 @@ def about(request):
 def login(request):
     password = request.POST['psw']
     username = request.POST['uname']
-    if username == 'ccl19' and hashlib.sha256(password.encode('utf-8')).hexdigest() == '08c368c45b3e8d0c6ddc111a564f05dac269f1b1623ac4989b94b8d577d85d19':
+    if username == 'ccl19' and hashlib.sha256(password.encode('utf-8')).hexdigest() == '':
         return redirect('/about')
-    elif username == 'yscamy' and hashlib.sha256(password.encode('utf-8')).hexdigest() == '65123d9463c1fa5535e014bfaf9c551481b1b4d227b587b917ca9f05c8edc778':
+    elif username == 'yscamy' and hashlib.sha256(password.encode('utf-8')).hexdigest() == '':
         return redirect('/about')
-    elif username == 'ms3120' and hashlib.sha256(password.encode('utf-8')).hexdigest() == '4191a83a68daf3b0a0e997342f79f8c38a68553e5cd255830552ba302efccecd':
+    elif username == 'ms3120' and hashlib.sha256(password.encode('utf-8')).hexdigest() == '':
         return redirect('/about')
-    elif username == 'hjj120' and hashlib.sha256(password.encode('utf-8')).hexdigest() == '5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8':
+    elif username == 'hjj120' and hashlib.sha256(password.encode('utf-8')).hexdigest() == '':
         return redirect('/about')
-    elif username == 'jjo20' and hashlib.sha256(password.encode('utf-8')).hexdigest() == '1906bc7c801f03c41551b06e2fd406e8f471787c51357e8731ec61dd599f04c8':
+    elif username == 'jjo20' and hashlib.sha256(password.encode('utf-8')).hexdigest() == '':
         return redirect('/about')
-    elif username == 'milu' and hashlib.sha256(password.encode('utf-8')).hexdigest() == '9ab83c29298c6edeefe322684cdb4e81c1175eb41463c1d6d62c5e1acc7b0c6c':
+    elif username == 'milu' and hashlib.sha256(password.encode('utf-8')).hexdigest() == '':
         return redirect('/about')
-    elif username == 'kelvin' and hashlib.sha256(password.encode('utf-8')).hexdigest() == 'e45a1e24db27c12e9a60a38e56ade21c2f37e74adcd13959d01f898c27cae891':
+    elif username == 'kelvin' and hashlib.sha256(password.encode('utf-8')).hexdigest() == '':
         return redirect('/about')
     else:
         return redirect('/')
